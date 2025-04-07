@@ -1,0 +1,13 @@
+contract address: 0xC1dC7a8379885676a6Ea08E67b7Defd9a235De71
+account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+npm init -y
+npm install --save-dev hardhat
+npm install @openzeppelin/contracts
+npm install --save-dev @nomiclabs/hardhat-ethers
+npx hardhat init
+npx hardhat node
+npx hardhat run scripts/deploy.js --network hardhat
+npx hardhat console --network hardhat
+npx hardhat run scripts/test.js --network hardhat
+
