@@ -55,7 +55,6 @@ contract PancakeV3Interaction {
         );
     }
 
-    // Thu phí từ vị trí thanh khoản
     function collectFees(
         int24 tickLower,
         int24 tickUpper,
@@ -76,7 +75,6 @@ contract PancakeV3Interaction {
         int24 tickUpper,
         uint128 amount
     ) external {
-        // Gọi hàm burn từ PancakeV3Pool để rút thanh khoản
         pancakeV3Pool.burn(
             tickLower, // tick dưới
             tickUpper, // tick trên
